@@ -1,0 +1,26 @@
+.gc-ds-nav h1 {
+	border-bottom: 4px solid #af3c43;
+}
+
+.gc-ds-nav ul {
+	list-style-type: none;
+	padding-inline-start: 0px;
+}
+
+.gc-ds-nav ul li {
+	 display: inline-block;
+	 margin-left: 10px;
+}
+
+.gc-ds-nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.gc-ds-nav a:visited {
+	color: white;
+}
+
+.gc-ds-nav .selected {
+	border-bottom: 2px solid white;
+}
