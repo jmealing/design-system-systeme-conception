@@ -2,18 +2,47 @@
 	background-color: #26374a;
 }
 
-.gc-ds-nav .navbar-toggler {
+.gc-ds-nav .white {
 	color: white;
+	border: 1px solid white;
+}
+
+.gc-ds-nav .navbar-toggler  {
+	font-size: 1em;
+	padding: .65em;
+	margin-top: -15px;
+}
+
+.gc-ds-nav .navbar-collapse {
+	justify-content: flex-end;
+}
+
+.gc-ds-nav .navbar-brand {
+	padding: .5em;
+}
+
+.gc-ds-nav .nav-link {
+	padding: 0rem 0rem;
+	margin: 1.75rem 1rem;
+}
+
+.gc-ds-nav .navbar-brand img {
+	height: 20px;
+}
+
+.gc-ds-nav .navbar:before, .navbar:after {
+    content: none;
 }
 
 .gc-ds-nav .navbar {
 	margin-bottom: 0px;
-	margin-top: 20px;
+	margin-top: 14px;
 }
 
 .gc-ds-nav .navbar-nav ul {
 	list-style-type: none;
 	padding-inline-start: 0px;
+	margin-bottom: 0;
 }
 
 .gc-ds-nav a {
@@ -28,12 +57,38 @@
 
 .gc-ds-nav .active {
 	border-bottom: 2px solid white;
+	width: 33%;
+	font-weight: bold;
+}
+
+
+@media (min-width: 1024px) {
+	.gc-ds-nav {
+		margin-top: 10px;
+	}
+
+	.gc-ds-nav .navbar-brand img {
+		height: 30px;
+	}
 }
 
 @media (min-width: 500px) {
 	.gc-ds-nav .navbar-nav ul li {
 		display: inline-block;
 		margin-left: 10px;
+	}
+
+	.gc-ds-nav .navbar-brand img {
+		height: 24px;
+	}
+
+	.gc-ds-nav .nav-link {
+		padding: 0rem 0rem;
+		margin: 0rem 0rem;
+	}
+
+	.gc-ds-nav .active {
+		width: 100%;
 	}
 }
 
