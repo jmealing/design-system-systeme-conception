@@ -9,7 +9,9 @@
 		<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
 		<link rel="stylesheet" href="../css/gc-design-sys-nav.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- need for mobile menu -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- need for mobile menu -->
 		<noscript>
 			<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/wet-boew/css/noscript.min.css" />
 		</noscript>
@@ -73,26 +75,30 @@
 			</div>
 
 
-			<div style="background-color: #26374a;">
-			<div class="container gc-ds-nav">
-				<div class="row">
-				<div class="col-md-4 col-xs-12">
-					<h1 style="color: white;">GC Design system</h1>
+	<div class="gc-ds-nav">
+		<div class="container">
+			<nav class="navbar navbar-expand-md">
+				<a href="#" class="navbar-brand">
+					<img src="/examples/images/logo.svg" height="28" alt="GC Design system">
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon">Menu</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav pstn-rght-md">
+						<ul>
+						<li><a href="#" class="nav-item nav-link active">Get started</a></li>
+						<li><a href="#" class="nav-item nav-link">Library</a></li>
+						<li><a href="#" class="nav-item nav-link">Styles</a></li>
+						<li><a href="#" class="nav-item nav-link">Task design</a></li>
+						<li><a href="#" class="nav-item nav-link">Community</a></li>
+						</ul>
+
+					</div>
 				</div>
-				<div class="col-md-8 col-xs-12">
-						<nav>
-							<ul>
-								<li class="selected"><a href="">Get started</a></li>
-								<li><a href="">Library</a></li>
-								<li><a href="">Styles</a></li>
-								<li><a href="">Task design</a></li>
-								<li><a href="">Community</a></li>
-							</ul>
-						</nav>
-				</div>
-				</div>
-			</div>
-			</div>
+			</nav>
+		</div>
+	</div>
 
 			<!-- <nav class="gcweb-menu" typeof="SiteNavigationElement">
 				<div class="container">
@@ -317,7 +323,7 @@
 			</div>
 		</footer>
 		<!--[if gte IE 9 | !IE]><!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script> not needed with updated script -->
 		<script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
 		<!--<![endif]-->
 		<!--[if lt IE 9]>
@@ -326,51 +332,6 @@
 		<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
 		<script>
 			document.getElementById("submissionPage").value = location.href;
-		</script>
-		<script>
-			$(".tt-img").click(function(){
-				$(this).toggle();
-				$(".with").removeClass("wb-inv");
-				$(".intro").removeClass("col-md-6").addClass("col-md-12");
-				});
-
-			$(".with").click(function () {
-					$(this).addClass("wb-inv");
-					$(".tt-img").toggle();
-					$(".intro").removeClass("col-md-12").addClass("col-md-6");
-				});
-
-			$(".off-followus").click(function () {
-					$(this).addClass("wb-inv");
-					$(".promo-social").addClass("wb-inv");
-					$(".single-feature").removeClass("wb-inv");
-					$(".on-followus").removeClass("wb-inv");
-				});
-
-			$(".on-followus").click(function () {
-					$(this).addClass("wb-inv");
-					$(".promo-social").removeClass("wb-inv");
-					$(".single-feature").addClass("wb-inv");
-					$(".off-followus").removeClass("wb-inv");
-
-				});
-				//
-			// $(function () {
-			// 		$(window).bind("resize", function () {
-			// 			if ($(this).width() < 549) {
-			// 				$('.guidance-options').removeClass('btn-group')
-			// 				$('.guidance-toggle').addClass('col-xs-12')
-			// 				$('.get-code').addClass('col-xs-12')
-
-			// 			}
-			// 			else {
-			// 				$('.guidance-options').addClass('btn-group')
-			// 				$('.guidance-toggle').removeClass('col-xs-12')
-			// 				$('.get-code').removeClass('col-xs-12')
-
-			// 			}
-			// 		})
-			//	})
 		</script>
 	</body>
 </html>
