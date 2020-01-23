@@ -51,6 +51,10 @@
 	font-size: 1em;
 }
 
+.gc-ds-nav .navbar-nav a:hover {
+	border-bottom: 2px solid white;
+}
+
 .gc-ds-nav a:visited {
 	color: white;
 }
